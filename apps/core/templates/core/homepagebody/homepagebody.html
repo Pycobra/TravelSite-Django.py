@@ -1,0 +1,12 @@
+{% load static %}
+{% block styleSheets %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/homepagebody/homepagebody.css' %}">
+{% endblock %}
+
+
+<section class="body">
+        {% include './block-1/block-1.html' %}
+        {% include './block-2/block-2.html' %}
+        {% include './block-3/block-3.html' %}
+        {% include './block-4/block-4.html' %}
+</section>

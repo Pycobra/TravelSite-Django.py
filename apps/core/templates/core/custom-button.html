@@ -1,0 +1,15 @@
+{% load static %}
+{% block styleSheets %}
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/custom-button.css' %}">
+{% endblock %}
+
+
+
+<button class="{% if buttonType == 'Btn1' %} btn-1
+            {% elif buttonType == 'Btn2' %} btn-2
+            {% endif %} custom-button">
+    {{buttonText}}
+</button>
+
+
+

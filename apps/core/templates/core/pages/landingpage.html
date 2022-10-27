@@ -1,0 +1,34 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+
+{% block title %}Welcome Home{% endblock %}
+
+
+
+
+{% block content %}
+<section id="mother">
+    <div id="homepage">
+        <div class="fill-up">
+            <span class="place1">Best&nbsp;in&nbsp;Nigeria,Africa</span>
+            <span class="place2">9JA&nbsp;Destinations</span>
+            <span class="place3">Your one stop online kitchen for all the
+                nigerian mouth watering dishes that brings amazing satisfaction,
+                and you will never seek food anywhere else</span>
+            <div class="place4">
+                {% with buttonType='Btn1' buttonText='book reservation' %}
+                    {% include '../custom-button.html' %}
+                {% endwith %}
+                {% with buttonType='Btn2' buttonText='see menu' %}
+                    {% include '../custom-button.html' %}
+                {% endwith %}
+<!--            <button class="a">Book&nbsp;reservation</button>-->
+<!--            <button class="b">See&nbsp;menu</button> -->
+            </div>
+        </div>
+    </div>
+    {% include '../homepagebody/homepagebody.html' %}
+    <i class="fa fa-caret-up"></i>
+</section>
+{% endblock %}
